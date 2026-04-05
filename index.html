@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ドライヘッドスパ専門店 ゆう-MEGURI-｜福岡市東区唐原の完全個室ヘッドスパ</title>
-  <meta name="description" content="福岡市東区唐原のドライヘッドスパ専門店 ゆう-MEGURI-。完全個室・1日3名様限定。水やオイルを使わない上質なドライヘッドスパ。Square予約に対応。" />
+  <meta name="description" content="福岡市東区唐原のドライヘッドスパ専門店 ゆう-MEGURI-。深い眠りへ導く極上育毛リラクゼーションドライヘッドスパ。完全個室・完全予約制。ご予約はSquareから。" />
   <style>
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -13,291 +13,162 @@
       font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
       color: #f5f0e8;
       background:
-        radial-gradient(circle at top, rgba(201,170,111,0.18), transparent 30%),
-        linear-gradient(180deg, #111111 0%, #1a1715 45%, #0f0f0f 100%);
-      line-height: 1.8;
+        radial-gradient(circle at top, rgba(201,170,111,0.16), transparent 28%),
+        linear-gradient(180deg, #0c0b0b 0%, #151211 48%, #0b0b0b 100%);
+      line-height: 1.85;
     }
     a { text-decoration: none; color: inherit; }
-    .container { width: min(1100px, 92%); margin: 0 auto; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1140px, 92%); margin: 0 auto; }
 
     .header {
       position: sticky;
       top: 0;
       z-index: 1000;
       backdrop-filter: blur(10px);
-      background: rgba(10, 10, 10, 0.78);
+      background: rgba(8, 8, 8, 0.82);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     .header-inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 0;
-      gap: 20px;
+      padding: 14px 0;
+      gap: 24px;
     }
-    .logo {
-      font-size: 1.05rem;
-      letter-spacing: 0.08em;
-      color: #fff7ea;
-      font-weight: 600;
+    .logo-wrap { display: flex; align-items: center; gap: 14px; }
+    .logo-img {
+      width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
+      border: 1px solid rgba(255,255,255,0.1); background: #fff;
     }
+    .logo-text { color: #fff7ea; font-size: 1rem; letter-spacing: 0.08em; font-weight: 600; }
     .nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 0.95rem;
-      color: #e8dcc8;
+      display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.94rem; color: #e8dcc8;
     }
     .nav a:hover { color: #d9b36a; }
 
-    .hero { padding: 88px 0 72px; }
-    .hero-box {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 32px;
-      align-items: center;
+    .hero { padding: 78px 0 70px; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 34px; align-items: center;
     }
     .hero-sub {
-      display: inline-block;
-      font-size: 0.85rem;
-      letter-spacing: 0.35em;
-      color: #d9b36a;
-      margin-bottom: 20px;
-      text-transform: uppercase;
+      display: inline-block; font-size: 0.82rem; letter-spacing: 0.35em; color: #d9b36a;
+      margin-bottom: 18px; text-transform: uppercase;
     }
     .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 4.4rem);
-      line-height: 1.35;
-      margin: 0 0 20px;
-      font-weight: 500;
-      color: #fffaf2;
+      font-size: clamp(2.1rem, 4.8vw, 4.3rem); line-height: 1.35; margin: 0 0 18px;
+      font-weight: 500; color: #fffaf2;
     }
-    .hero h1 span {
-      display: block;
-      color: #e2bf81;
-      font-style: italic;
-    }
-    .hero p {
-      font-size: 1.05rem;
-      color: #efe3d2;
-      max-width: 650px;
-    }
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
+    .hero p { font-size: 1.04rem; color: #efe3d2; max-width: 680px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
     .btn {
-      display: inline-block;
-      padding: 14px 26px;
-      border-radius: 999px;
-      font-size: 0.95rem;
-      transition: 0.25s ease;
-      border: 1px solid rgba(255,255,255,0.14);
+      display: inline-block; padding: 14px 26px; border-radius: 999px; font-size: 0.95rem;
+      transition: 0.25s ease; border: 1px solid rgba(255,255,255,0.14);
     }
     .btn-gold {
-      background: linear-gradient(135deg, #cda45e, #8d6931);
-      color: #fff;
-      border: none;
+      background: linear-gradient(135deg, #cda45e, #8d6931); color: #fff; border: none;
       box-shadow: 0 12px 30px rgba(0,0,0,0.28);
     }
-    .btn-gold:hover { transform: translateY(-1px); opacity: 0.95; }
-    .btn-line {
-      background: transparent;
-      color: #f4eadb;
-    }
+    .btn-gold:hover { transform: translateY(-1px); opacity: 0.96; }
+    .btn-line { background: transparent; color: #f4eadb; }
     .btn-line:hover { background: rgba(255,255,255,0.05); }
 
-    .hero-card,
-    .card,
-    .menu-card,
-    .step,
-    .faq-item,
-    .access-card,
-    .reserve-card {
+    .panel, .menu-card, .faq-item, .info-card {
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 24px;
+      border-radius: 26px;
       box-shadow: 0 12px 40px rgba(0,0,0,0.18);
     }
+    .panel { padding: 28px; }
 
-    .hero-card {
-      padding: 28px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+    .hero-photo {
+      overflow: hidden; border-radius: 28px; border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.28);
+      min-height: 100%;
     }
-    .hero-card h3,
-    .card h3,
-    .menu-card h3,
-    .step h3,
-    .faq-item h3,
-    .access-card h3,
-    .reserve-card h3 {
-      color: #fff4e5;
-      margin-top: 0;
-    }
-    .hero-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 18px 0 0;
-    }
-    .hero-card li {
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      color: #efe3d2;
-    }
-    .hero-card li:last-child { border-bottom: none; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
 
-    section { padding: 78px 0; }
-    .section-title { text-align: center; margin-bottom: 44px; }
+    section { padding: 76px 0; }
+    .section-title { text-align: center; margin-bottom: 42px; }
     .section-title .en {
-      color: #d9b36a;
-      letter-spacing: 0.32em;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      display: block;
-      margin-bottom: 12px;
+      color: #d9b36a; letter-spacing: 0.32em; font-size: 0.82rem; text-transform: uppercase;
+      display: block; margin-bottom: 12px;
     }
     .section-title h2 {
-      margin: 0;
-      font-size: clamp(1.9rem, 3vw, 3rem);
-      color: #fff8f0;
-      font-weight: 500;
+      margin: 0; font-size: clamp(1.9rem, 3vw, 3rem); color: #fff8f0; font-weight: 500;
     }
-    .section-title p {
-      max-width: 760px;
-      margin: 16px auto 0;
-      color: #e5d6c3;
+    .section-title p { max-width: 760px; margin: 16px auto 0; color: #e5d6c3; }
+
+    .intro-grid, .gallery-grid, .menu-grid, .faq-grid, .info-grid {
+      display: grid; gap: 24px;
     }
+    .intro-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .menu-grid { grid-template-columns: repeat(3, 1fr); }
+    .faq-grid { grid-template-columns: 1fr 1fr; }
+    .info-grid { grid-template-columns: 1fr 1fr; }
 
-    .features,
-    .menu-grid,
-    .flow,
-    .faq-list,
-    .access-box,
-    .concept {
-      display: grid;
-      gap: 22px;
+    .feature-list { list-style: none; padding: 0; margin: 18px 0 0; }
+    .feature-list li {
+      padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); color: #efe3d2;
     }
-    .features { grid-template-columns: repeat(3, 1fr); }
-    .menu-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .flow { grid-template-columns: repeat(4, 1fr); gap: 18px; }
-    .faq-list { grid-template-columns: 1fr 1fr; gap: 18px; }
-    .access-box { grid-template-columns: 1fr 1fr; gap: 24px; }
-    .concept { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .feature-list li:last-child { border-bottom: none; }
 
-    .card,
-    .menu-card,
-    .step,
-    .faq-item,
-    .access-card,
-    .reserve-card { padding: 28px; }
-
-    .card p,
-    .faq-item p,
-    .access-list p,
-    .reserve-card p,
-    .step p,
-    .menu-card p { color: #eadbc8; margin-bottom: 0; }
-
-    .menu-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
-      border: 1px solid rgba(214,178,112,0.18);
+    .gallery-card {
+      overflow: hidden; border-radius: 26px; border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
     }
+    .gallery-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+    .gallery-card .caption { padding: 16px 18px; color: #eadbc8; }
+
+    .logo-section {
+      display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap;
+    }
+    .logo-large {
+      width: 170px; height: 170px; border-radius: 50%; object-fit: cover; background: #fff;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .logo-copy { max-width: 620px; color: #eadbc8; }
+
+    .menu-card { padding: 30px 26px; background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03)); border-color: rgba(214,178,112,0.18); }
     .menu-card .time {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      font-size: 0.82rem;
-      color: #f0dfc7;
-      margin-bottom: 12px;
+      display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,0.06);
+      font-size: 0.82rem; color: #f0dfc7; margin-bottom: 12px;
     }
-    .price {
-      font-size: 2rem;
-      color: #d9b36a;
-      margin: 18px 0 6px;
-    }
-    .step .num {
-      color: #d9b36a;
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-    }
+    .menu-card h3 { margin: 0 0 12px; color: #fff4e5; font-size: 1.28rem; }
+    .menu-card p { color: #eadbc8; }
+    .price { font-size: 2rem; color: #d9b36a; margin: 18px 0 6px; }
+    .menu-note { color: #ccb89d; font-size: 0.92rem; margin-bottom: 18px; }
 
-    .access-list strong { color: #fff4e5; }
-    .tel-link {
-      color: #f6e1b1;
-      font-weight: 600;
+    .faq-item, .info-card { padding: 26px; }
+    .faq-item h3, .info-card h3 { margin-top: 0; color: #fff4e5; }
+    .faq-item p, .info-card p { color: #eadbc8; margin-bottom: 0; }
+
+    .reserve-banner {
+      margin-top: 24px; padding: 26px; border-radius: 26px;
+      background: radial-gradient(circle at top right, rgba(201,170,111,0.18), transparent 28%), rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
     }
-    .reserve-card {
-      background:
-        radial-gradient(circle at top right, rgba(201,170,111,0.18), transparent 30%),
-        rgba(255,255,255,0.04);
-    }
-    .reserve-buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-    }
+    .reserve-banner p { color: #eadbc8; }
+    .reserve-actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 18px; }
 
     .cta-fixed {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 1100;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      position: fixed; right: 18px; bottom: 18px; z-index: 1100;
     }
     .cta-fixed a {
-      padding: 12px 18px;
-      border-radius: 999px;
-      font-size: 0.92rem;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.24);
-      text-align: center;
-      min-width: 150px;
-    }
-    .cta-call {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
-      color: #fff;
-    }
-    .cta-reserve {
-      background: linear-gradient(135deg, #cda45e, #8d6931);
-      color: #fff;
-      border: none;
+      display: inline-block; padding: 14px 22px; border-radius: 999px; min-width: 170px; text-align: center;
+      background: linear-gradient(135deg, #cda45e, #8d6931); color: #fff; box-shadow: 0 12px 30px rgba(0,0,0,0.26);
     }
 
-    .footer {
-      padding: 28px 0 40px;
-      text-align: center;
-      color: #cdbfae;
-      font-size: 0.9rem;
-    }
+    .footer { padding: 28px 0 40px; text-align: center; color: #cdbfae; font-size: 0.9rem; }
 
-    @media (max-width: 900px) {
-      .hero-box,
-      .features,
-      .concept,
-      .menu-grid,
-      .flow,
-      .faq-list,
-      .access-box {
-        grid-template-columns: 1fr;
-      }
-      .header-inner {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-      .nav { gap: 12px; }
-      .hero { padding-top: 56px; }
-      .cta-fixed {
-        right: 12px;
-        left: 12px;
-        bottom: 12px;
-      }
-      .cta-fixed a { min-width: auto; }
+    @media (max-width: 920px) {
+      .hero-grid, .intro-grid, .gallery-grid, .menu-grid, .faq-grid, .info-grid { grid-template-columns: 1fr; }
+      .header-inner { align-items: flex-start; flex-direction: column; }
+      .hero { padding-top: 54px; }
+      .cta-fixed { right: 12px; left: 12px; bottom: 12px; }
+      .cta-fixed a { min-width: auto; width: 100%; }
     }
   </style>
 </head>
@@ -305,90 +176,127 @@
 
   <header class="header">
     <div class="container header-inner">
-      <div class="logo">ドライヘッドスパ専門店 ゆう-MEGURI-</div>
+      <div class="logo-wrap">
+        <img class="logo-img" src="images/logo.jpg" alt="MEGURI ロゴ" />
+        <div class="logo-text">ドライヘッドスパ専門店 ゆう-MEGURI-</div>
+      </div>
       <nav class="nav">
         <a href="#about">当店について</a>
-        <a href="#menu">メニュー</a>
-        <a href="#flow">施術の流れ</a>
+        <a href="#menu">メニュー・料金</a>
+        <a href="#content">施術内容</a>
+        <a href="#gallery">施術イメージ</a>
         <a href="#faq">よくある質問</a>
         <a href="#access">店舗情報</a>
-        <a href="#reserve">ご予約</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-box">
+      <div class="container hero-grid">
         <div>
           <span class="hero-sub">Luxury Dry Head Spa</span>
-          <h1>日常に、<span>静かな贅沢を。</span></h1>
+          <h1>深い眠りへ導く<br>極上育毛リラクゼーションドライヘッドスパ</h1>
           <p>
             福岡市東区唐原の完全個室ドライヘッドスパ専門店。<br>
-            1日3名様限定の上質な空間で、頭皮・首・肩へやさしく深くアプローチ。<br>
-            水やオイルを使わないオールハンド技術で、心までほどける癒しの時間をお届けします。
+            首・頭・額をしっかりとほぐし整え、心身ともにリセットされる上質な癒し体験をお届けします。<br>
+            現代のストレス社会に、静けさと技が織りなす大人の贅沢時間を。
           </p>
           <div class="hero-actions">
-            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Squareで予約する</a>
-            <a class="btn btn-line" href="tel:08062139847">電話でお問い合わせ</a>
+            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約はこちら</a>
+            <a class="btn btn-line" href="#menu">メニューを見る</a>
           </div>
-          <p style="color:#ccb89d; margin-top:18px;">完全予約制 / 完全個室 / 1日3名様限定 / 育毛ケア対応</p>
         </div>
-
-        <div class="hero-card">
-          <h3>ゆう-MEGURI- のこだわり</h3>
-          <ul>
-            <li>完全個室でゆったり過ごせる静かな空間</li>
-            <li>1日3名様限定の丁寧な施術</li>
-            <li>水やオイルを使わない完全ドライ施術</li>
-            <li>頭皮環境を整える育毛促進ケアにも対応</li>
-          </ul>
+        <div class="hero-photo">
+          <img src="images/hero-headspa.jpg" alt="ドライヘッドスパ施術イメージ" />
         </div>
       </div>
     </section>
 
     <section id="about">
-      <div class="container">
-        <div class="section-title">
-          <span class="en">About</span>
-          <h2>当店について</h2>
-          <p>
-            ただ気持ちいいだけではなく、施術後の軽やかさ、深い安らぎ、
-            頭皮環境への配慮まで大切にしたドライヘッドスパ専門店です。
+      <div class="container intro-grid">
+        <div class="panel">
+          <h2 style="margin-top:0; color:#fff4e5;">～頭と心がスッキリ軽くなる～</h2>
+          <p style="color:#eadbc8;">
+            深い眠りへと誘う極上のドライヘッドスパ。<br>
+            首・頭・額をしっかりとほぐし整え、心身ともにリセットされる上質な癒し体験を。<br>
+            “満足度重視”のドライヘッドスパとして、静かな個室空間でゆっくり自分を整える時間をお楽しみいただけます。
           </p>
+          <ul class="feature-list">
+            <li>完全個室・完全予約制</li>
+            <li>1日3名様限定の丁寧な施術</li>
+            <li>水やオイルを使わない完全ドライ施術</li>
+            <li>髪と頭皮に着目した育毛リラクゼーション対応</li>
+          </ul>
         </div>
-
-        <div class="features">
-          <div class="card">
-            <h3>深いリラクゼーション</h3>
-            <p>独自のオールハンド技術で、頭皮から首・肩までやさしく丁寧にほぐし、緊張をゆるやかに解き放ちます。</p>
-          </div>
-          <div class="card">
-            <h3>育毛促進ケア</h3>
-            <p>頭皮環境をすこやかに保つための施術で、リラックスと頭皮ケアの両立を目指します。</p>
-          </div>
-          <div class="card">
-            <h3>上質な空間設計</h3>
-            <p>余白・落ち着いた色味・静けさを大切にし、ご来店の瞬間から非日常を感じていただけるよう整えています。</p>
+        <div class="panel">
+          <div class="logo-section">
+            <img class="logo-large" src="images/logo.jpg" alt="MEGURIロゴ" />
+            <div class="logo-copy">
+              <h2 style="margin-top:0; color:#fff4e5;">ドライヘッドスパ専門店 ゆう-MEGURI-</h2>
+              <p>
+                深いリラクゼーションと頭皮ケアを両立した、上質なドライヘッドスパ専門店です。<br>
+                眠りの浅さ、脳疲労、眼精疲労、ストレス、頭皮環境の乱れが気になる方に、静かな隠れ家的空間で“整う”時間をご提供します。
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container concept">
-        <div class="card">
-          <h3>眠りの浅さや、頭の重だるさを感じる方へ</h3>
-          <p>ゆう-MEGURI-では、頭皮・首・肩まわりのこわばりに寄り添いながら、ゆったりとした呼吸とともに心身を整えていきます。</p>
-          <p>ご自身へのご褒美としてはもちろん、大切な方への贈り物のような時間としてもお選びいただけるサロンを目指しています。</p>
+    <section id="content">
+      <div class="container">
+        <div class="section-title">
+          <span class="en">Treatment</span>
+          <h2>施術内容</h2>
+          <p>
+            足湯でじんわり温まり、ホットスチームで深くほぐし、カッサや炭酸スプレーで頭皮の巡りを促す、贅沢な満足度重視のコースです。
+          </p>
         </div>
-        <div class="card">
-          <h3>こんな方におすすめです</h3>
-          <p>・頭の重さやスッキリしない感覚がある方</p>
-          <p>・眼精疲労や首肩のこりが気になる方</p>
-          <p>・睡眠の質を整えたい方</p>
-          <p>・頭皮環境を見直したい方</p>
-          <p>・静かな空間で自分を整える時間が欲しい方</p>
+        <div class="intro-grid">
+          <div class="panel">
+            <h3 style="margin-top:0; color:#fff4e5;">コース内容</h3>
+            <ul class="feature-list">
+              <li>足湯で身体をじんわり温める</li>
+              <li>ホットスチームで深くほぐす</li>
+              <li>首・頭・額をしっかり整える</li>
+              <li>カッサで頭皮の巡りをサポート</li>
+              <li>炭酸スプレーで頭皮をすっきりケア</li>
+              <li>心と髪のための静かな個室時間</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3 style="margin-top:0; color:#fff4e5;">期待できること</h3>
+            <ul class="feature-list">
+              <li>脳疲労の回復</li>
+              <li>睡眠の質向上</li>
+              <li>リフトアップ</li>
+              <li>目力アップ</li>
+              <li>眼精疲労ケア</li>
+              <li>ストレス・自律神経ケア</li>
+              <li>頭皮・ヘアケア</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-title">
+          <span class="en">Gallery</span>
+          <h2>施術イメージ</h2>
+          <p>ご提供いただいた写真をメインに、落ち着いた雰囲気で見せる構成にしています。</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <img src="images/hero-headspa.jpg" alt="耳まわりの施術イメージ" />
+            <div class="caption">耳まわりから首元まで、やさしく深く整える施術。</div>
+          </div>
+          <div class="gallery-card">
+            <img src="images/relax-image.jpg" alt="深い眠りへ導く施術イメージ" />
+            <div class="caption">静けさの中で、深いリラクゼーションへ導く上質な時間。</div>
+          </div>
         </div>
       </div>
     </section>
@@ -398,61 +306,76 @@
         <div class="section-title">
           <span class="en">Menu</span>
           <h2>メニュー・料金</h2>
-          <p>お悩みやその日の状態に合わせて選びやすい、シンプルで分かりやすいコースをご用意しています。</p>
+          <p>現在のメニュー・料金ページの内容に合わせた構成です。</p>
         </div>
 
         <div class="menu-grid">
           <div class="menu-card">
             <span class="time">90分</span>
-            <h3>スタンダードドライヘッドスパ</h3>
-            <p>頭皮・首・肩まで丁寧にほぐし、深い休息へ導く基本コース。初めての方にもおすすめです。</p>
-            <div class="price">¥12,000</div>
-            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Squareで予約する</a>
+            <h3>リラクゼーションドライヘッドスパ</h3>
+            <p>
+              深い眠りへと誘う極上のドライヘッドスパ。<br>
+              首・頭・額をしっかりとほぐし整え、心身ともにリセットされる上質な癒し体験をお届けします。
+            </p>
+            <div class="price">¥18,000</div>
+            <div class="menu-note">税込</div>
+            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約</a>
           </div>
+
           <div class="menu-card">
             <span class="time">90分</span>
-            <h3>育毛促進ドライヘッドスパ</h3>
-            <p>頭皮環境に着目し、健やかな巡りと土台づくりを目指す特別コース。将来の髪と頭皮を大切にしたい方へ。</p>
-            <div class="price">¥15,000</div>
-            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Squareで予約する</a>
+            <h3>育毛リラクゼーションドライヘッドスパ（濃度20％）</h3>
+            <p>
+              〜未来の髪は、今日の頭皮ケアから〜<br>
+              最近、抜け毛や髪のハリ・コシが気になる…そんなお悩みに寄り添いながら、頭皮を優しくほぐし、血流と細胞の働きを整える育毛ケアを行います。<br>
+              “ドクターも推薦する本格スパ”として、当店人気No.1の信頼メニューです。癒されながら、髪の未来を育ててみませんか？
+            </p>
+            <div class="price">¥23,000</div>
+            <div class="menu-note">税込 / 各コース90分 / 国産最高品質 "ヒト幹細胞上清液" を使用</div>
+            <ul class="feature-list" style="margin-top:18px;">
+              <li>生え際、頭頂部などの薄毛が気になる方</li>
+              <li>白髪が増えた方</li>
+              <li>将来のため今から薄毛を予防したい方</li>
+              <li>髪のストレスやダメージが気になる方</li>
+              <li>心身共にリラックスしたい方</li>
+              <li>薄毛予防 / 改善</li>
+              <li>白髪予防 / 改善</li>
+              <li>ストレスケア・頭皮 / ヘアケア</li>
+              <li>リフトアップ効果・自律神経ケア・髪質改善</li>
+            </ul>
+            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約</a>
           </div>
-          <div class="menu-card">
-            <span class="time">120分</span>
-            <h3>極上プレミアムケア</h3>
-            <p>より深いリラクゼーションと贅沢な時間をご体感いただける、上質なフルケアコースです。</p>
-            <div class="price">¥18,000</div>
-            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Squareで予約する</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="flow">
-      <div class="container">
-        <div class="section-title">
-          <span class="en">Flow</span>
-          <h2>施術の流れ</h2>
+          <div class="menu-card">
+            <span class="time">90分</span>
+            <h3>極上 育毛リラクゼーションドライヘッドスパ（濃度110％）</h3>
+            <p>
+              〜未来の髪は、今日の頭皮ケアから〜<br>
+              最近、抜け毛や髪のハリ・コシが気になる…そんなお悩みに寄り添いながら、頭皮を優しくほぐし、血流と細胞の働きを整える育毛ケアを行います。<br>
+              濃度を110％と贅沢に使用し、極上のお時間をご堪能いただけます。
+            </p>
+            <div class="price">¥30,000</div>
+            <div class="menu-note">税込 / 各コース90分 / 国産最高品質 "ヒト幹細胞上清液" を使用</div>
+            <ul class="feature-list" style="margin-top:18px;">
+              <li>生え際、頭頂部などの薄毛が気になる方</li>
+              <li>白髪が増えた方</li>
+              <li>将来のため今から薄毛を予防したい方</li>
+              <li>髪のストレスやダメージが気になる方</li>
+              <li>心身共にリラックスしたい方</li>
+              <li>薄毛予防 / 改善</li>
+              <li>白髪予防 / 改善</li>
+              <li>ストレスケア・頭皮 / ヘアケア</li>
+              <li>リフトアップ効果・自律神経ケア・髪質改善</li>
+            </ul>
+            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約</a>
+          </div>
         </div>
-        <div class="flow">
-          <div class="step">
-            <div class="num">01</div>
-            <h3>カウンセリング</h3>
-            <p>お悩みやご希望を丁寧にお伺いします。</p>
-          </div>
-          <div class="step">
-            <div class="num">02</div>
-            <h3>状態確認</h3>
-            <p>頭皮・首・肩の状態を見ながら施術内容を整えます。</p>
-          </div>
-          <div class="step">
-            <div class="num">03</div>
-            <h3>ドライ施術</h3>
-            <p>独自のオールハンド技術で深層までやさしくアプローチします。</p>
-          </div>
-          <div class="step">
-            <div class="num">04</div>
-            <h3>アフターカウンセリング</h3>
-            <p>施術後の状態や日常ケアについてご案内します。</p>
+
+        <div class="reserve-banner">
+          <h3 style="margin-top:0; color:#fff4e5;">ご予約はすべてSquareから</h3>
+          <p>すべてのメニューはSquare予約と連動しています。空き状況の確認とご予約は下のボタンからそのまま進めます。</p>
+          <div class="reserve-actions">
+            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約ページへ</a>
           </div>
         </div>
       </div>
@@ -464,55 +387,47 @@
           <span class="en">FAQ</span>
           <h2>よくあるご質問</h2>
         </div>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h3>Q. 初めてでも大丈夫ですか？</h3>
-            <p>A. はい。初回は丁寧にカウンセリングを行い、無理のない施術をご提案します。</p>
-          </div>
+        <div class="faq-grid">
           <div class="faq-item">
             <h3>Q. 髪は濡れますか？</h3>
             <p>A. いいえ。水やオイルを使わないドライ施術のため、お出かけ前でもご利用いただけます。</p>
           </div>
           <div class="faq-item">
-            <h3>Q. どんな悩みに向いていますか？</h3>
-            <p>A. 眼精疲労、首肩の重だるさ、睡眠の質、頭皮環境のケア、深いリラックスを求める方におすすめです。</p>
+            <h3>Q. 予約方法は？</h3>
+            <p>A. ご予約はすべてSquare予約から承っています。サイト内のボタンからそのまま進めます。</p>
           </div>
           <div class="faq-item">
-            <h3>Q. 予約制ですか？</h3>
-            <p>A. はい。完全予約制で、お一人おひとりに合わせた時間をご用意しています。</p>
+            <h3>Q. どんな方におすすめですか？</h3>
+            <p>A. 眠りの浅さ、脳疲労、眼精疲労、ストレス、頭皮環境のケアをしたい方におすすめです。</p>
+          </div>
+          <div class="faq-item">
+            <h3>Q. 育毛コースの違いは？</h3>
+            <p>A. 使用するヒト幹細胞上清液の濃度が異なります。20％は人気No.1、110％はより贅沢な極上コースです。</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="access">
-      <div class="container">
-        <div class="section-title">
-          <span class="en">Access</span>
-          <h2>店舗情報・アクセス</h2>
+      <div class="container info-grid">
+        <div class="info-card">
+          <h3>店舗情報</h3>
+          <p><strong>店名：</strong>ドライヘッドスパ専門店 ゆう-MEGURI-</p>
+          <p><strong>営業時間：</strong>10:00〜20:00</p>
+          <p><strong>定休日：</strong>不定休</p>
+          <p><strong>住所：</strong>福岡県福岡市東区唐原2丁目10-10</p>
+          <p><strong>駐車場：</strong>あり</p>
+          <p><strong>ご予約：</strong>Square予約のみ</p>
+          <p><strong>公式サイト：</strong>meguri-headspa.com</p>
         </div>
-
-        <div class="access-box">
-          <div class="access-card">
-            <h3>店舗情報</h3>
-            <div class="access-list">
-              <p><strong>店名：</strong>ドライヘッドスパ専門店 ゆう-MEGURI-</p>
-              <p><strong>営業時間：</strong>10:00〜20:00</p>
-              <p><strong>定休日：</strong>不定休</p>
-              <p><strong>住所：</strong>福岡県福岡市東区唐原2丁目10-10</p>
-              <p><strong>電話番号：</strong><a class="tel-link" href="tel:08062139847">080-6213-9847</a></p>
-              <p><strong>予約方法：</strong>Square予約 / お電話</p>
-              <p><strong>公式サイト：</strong>meguri-headspa.com</p>
-            </div>
-          </div>
-
-          <div class="reserve-card" id="reserve">
-            <h3>ご予約はこちら</h3>
-            <p>ご予約はSquareと連動しています。下のボタンからそのまま空き状況の確認とご予約ができます。</p>
-            <div class="reserve-buttons">
-              <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Squareで予約する</a>
-              <a class="btn btn-line" href="tel:08062139847">電話する</a>
-            </div>
+        <div class="info-card">
+          <h3>ご予約について</h3>
+          <p>
+            すべてのご予約はSquare予約から承っています。<br>
+            空き状況の確認・ご予約・日時選択まで、ボタンひとつでそのまま進めます。
+          </p>
+          <div class="reserve-actions" style="justify-content:flex-start; margin-top:24px;">
+            <a class="btn btn-gold" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約ページへ</a>
           </div>
         </div>
       </div>
@@ -520,14 +435,13 @@
   </main>
 
   <div class="cta-fixed">
-    <a class="cta-call" href="tel:08062139847">電話する</a>
-    <a class="cta-reserve" href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約</a>
+    <a href="https://app.squareup.com/appointments/book/91q5s5uskzrunh/L8FANJED91DG9/start" target="_blank" rel="noopener noreferrer">Square予約</a>
   </div>
 
   <footer class="footer">
     <div class="container">
       <p>ドライヘッドスパ専門店 ゆう-MEGURI-</p>
-      <p>日常に静かな贅沢を。</p>
+      <p>深い眠りへ導く、上質なドライヘッドスパ。</p>
     </div>
   </footer>
 
